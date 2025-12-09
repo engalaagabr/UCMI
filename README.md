@@ -76,7 +76,52 @@ High-level layout of the project:
 
 ```text
 UCMI/
-├─ data/               # Raw and processed datasets
-├─ notebooks/          # Jupyter notebooks for each pipeline stage
-├─ outputs/            # Generated artifacts (figures, tables, dashboard)
-└─ README.md
+├─ data/                               # All dataset files
+│  ├─ car_data.csv                     # Original raw dataset
+│  ├─ car_data_cleaned.csv             # Cleaned dataset after preprocessing
+│  └─ cars_processed.csv               # Fully processed dataset
+│
+├─ notebooks/                          # Jupyter notebooks for each pipeline stage
+│  ├─ 01_data_cleaning.ipynb           # Data preparation and cleaning
+│  ├─ 02_feature_engineering.ipynb     # Feature creation and transformations
+│  └─ 03_EDA_visuals.ipynb             # Exploratory data analysis and visualizations
+│
+├─ outputs/                            # Generated artifacts
+│  ├─ screenshots/                     # Dashboard screenshots
+│  ├─ Dashboard.pbix                   # Power BI dashboard file
+│  └─ Presentation.pdf                 # Final project presentation
+│
+├─ README.md                           # Project documentation
+└─ requirements.txt                    # Python dependencies
+```
+---
+## Installation & Setup
+
+Follow the steps below to set up your environment and run the project.
+
+---
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/engalaagabr/UCMI.git
+cd UCMI
+```
+### 2.Create a Virtual Environment (Recommended)
+```bash
+python -m venv venv
+
+# macOS / Linux
+source venv/bin/activate
+
+# Windows
+venv\Scripts\activate
+```
+---
+### 3. Install Project Dependencies
+
+All required libraries are listed in requirements.txt.
+```bash
+pip install -r requirements.txt
+```
+---
+THX
