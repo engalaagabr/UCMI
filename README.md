@@ -2,6 +2,9 @@
 
 This project applies data cleaning, feature engineering, and Python-based exploratory analysis to understand used car market trends, culminating in an interactive dashboard that visualizes key insights such as pricing patterns, brand performance, and fuel type distribution.
 
+## Contributed in this : Alaa Gabr, Ahmed Amin
+
+
 > **Status:** Work in progress – the analytics pipeline is in place, and the dashboard is being finalized.
 
 
